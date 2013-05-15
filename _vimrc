@@ -13,11 +13,12 @@ Bundle 'gmarik/vundle'
 
 "my bundles here:
 Bundle 'snipMate'
-Bundle 'syntastic'
+Bundle 'Syntastic'
 Bundle 'minibufexpl.vim'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
-
+Bundle 'davidhalter/jedi'
+Bundle 'davidhalter/jedi-vim'
 
 filetype plugin indent on "required by vundle!
 
