@@ -4,20 +4,43 @@ set nocompatible
 :map <F5> bi{<ESC>ea}<Esc>
 set cmdheight=3
 
+"vundle requirements
+filetype off
+set rtp+=c:/gitrepos/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+"my bundles here:
+Bundle 'snipMate'
+Bundle 'syntastic'
+Bundle 'minibufexpl.vim'
+Bundle 'L9'
+Bundle 'FuzzyFinder'
 
 
-
-
-
+filetype plugin indent on "required by vundle!
 
 
 
 " added by JT
-:colorscheme matlabdark
+colorscheme matlabdark
 set nowrap
 set number
 au BufWritePost _vimrc so $VIM/_vimrc
+au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
+set background=dark
 
+"Recommended by sontek.net/blog/detail/turning-vim-into-a-modern-python-ide
+set foldmethod=indent 
+set foldlevel=99 
+map <c-j> <c-w>j
+map <c-k> <c-w>k 
+map <c-l> <c-w>l 
+map <c-h> <c-w>h 
+
+"Mapping for MiniBufExplorer
+map <Leader>b :MiniBufExplorer<cr>
 
 
 
