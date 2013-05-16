@@ -19,18 +19,20 @@ Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'davidhalter/jedi'
 Bundle 'davidhalter/jedi-vim'
+Bundle 'tpope/vim-fugitive.git'
 
 filetype plugin indent on "required by vundle!
 
 
 
 " added by JT
-colorscheme matlabdark
+colorscheme desert
 set nowrap
 set number
 au BufWritePost _vimrc so $VIM/_vimrc
 au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 set background=dark
+set autochdir "This automatically changes working directory to current files directory. useful for Fugitive.
 
 "Recommended by sontek.net/blog/detail/turning-vim-into-a-modern-python-ide
 set foldmethod=indent 
