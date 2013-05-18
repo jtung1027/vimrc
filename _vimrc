@@ -4,20 +4,46 @@ set nocompatible
 :map <F5> bi{<ESC>ea}<Esc>
 set cmdheight=3
 
+"vundle requirements
+filetype off
+set rtp+=c:/gitrepos/vundle/
+call vundle#rc()
 
+Bundle 'gmarik/vundle'
 
+"my bundles here:
+Bundle 'snipMate'
+Bundle 'Syntastic'
+Bundle 'minibufexpl.vim'
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+Bundle 'davidhalter/jedi'
+Bundle 'davidhalter/jedi-vim'
+Bundle 'tpope/vim-fugitive.git'
 
-
-
+filetype plugin indent on "required by vundle!
 
 
 
 " added by JT
-:colorscheme matlabdark
+colorscheme desert
 set nowrap
 set number
 au BufWritePost _vimrc so $VIM/_vimrc
+au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
+set background=dark
+set autochdir "This automatically changes working directory to current files directory. useful for Fugitive.
 
+"Recommended by sontek.net/blog/detail/turning-vim-into-a-modern-python-ide
+set foldmethod=indent 
+set foldlevel=99 
+map <c-j> <c-w>j
+map <c-k> <c-w>k 
+map <c-l> <c-w>l 
+map <c-h> <c-w>h 
+
+"Mapping for MiniBufExplorer
+map <Leader>b :MiniBufExplorer<cr>
 
 
 
