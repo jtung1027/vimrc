@@ -6,7 +6,7 @@ set cmdheight=3
 
 "vundle requirements
 filetype off
-set rtp+=c:/gitrepos/vundle/
+set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
