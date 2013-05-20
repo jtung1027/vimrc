@@ -14,7 +14,6 @@ Bundle 'gmarik/vundle'
 "my bundles here:
 Bundle 'snipMate'
 Bundle 'Syntastic'
-Bundle 'minibufexpl.vim'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'davidhalter/jedi'
