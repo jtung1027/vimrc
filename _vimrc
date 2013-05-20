@@ -41,10 +41,6 @@ map <c-k> <c-w>k
 map <c-l> <c-w>l 
 map <c-h> <c-w>h 
 
-"Mapping for MiniBufExplorer
-map <Leader>b :MiniBufExplorer<cr>
-
-
 
 
 " allow backspacing over everything in insert mode
