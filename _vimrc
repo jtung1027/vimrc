@@ -33,6 +33,20 @@ au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 set background=dark
 set autochdir "This automatically changes working directory to current files directory. useful for Fugitive.
 
+" function that opens new python script
+python import vim
+python import util
+function! Newpyscript()
+	python newfilename = util.newscript()
+	python vim.command("edit " + newfilename)
+	return
+endfunction
+command! Newpyscript call Newpyscript()
+
+
+
+	
+
 "Recommended by sontek.net/blog/detail/turning-vim-into-a-modern-python-ide
 set foldmethod=indent 
 set foldlevel=99 
